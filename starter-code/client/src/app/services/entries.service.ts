@@ -14,6 +14,10 @@ export class EntriesService {
       .map((res) => res.json());
   }
 
+  getOneEntry(id) {
+    return this.http.get(`${this.BASE_URL}/api/journal-entries/${id}`)
+      .map((res) => res.json());
+  }
 
 
 }
