@@ -1,0 +1,12 @@
+<p>
+  entry-list works!
+</p>
+
+<h1> Entry List </h1>
+<div>
+  <div *ngFor="let entry of entries">
+    <h3> {{ entry.title }} </h3>
+    <p> {{ entry.date }} </p>
+    <p> {{ entry.content }} </p>
+  </div>
+</div>
